@@ -26,7 +26,7 @@ plus
 <input type="button" value="equals" id="addButton">
 <span id="addResult"></span>
 <script>
-document.getElementById('addButton').addEventListener(function(){
+document.getElementById('addButton').onclick = function(){
   // Get numbers from the two boxes.
   var add1 = Number($('#add1').val());
   var add2 = Number($('#add2').val());
