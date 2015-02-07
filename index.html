@@ -14,7 +14,6 @@ a {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head><body>
 <a href="https://github.com/trinitycode" target="_blank">Edit code here</a>
-<a href="javascript:void(location.href = location.pathname + '?' + new Date() * 1)">Reload</a>
 
 <h1>Calculator</h1>
 
@@ -258,4 +257,7 @@ document.getElementById('recallButton').onclick = function(){
 <p><a href="tictactoe.html">Tic Tac Toe</a></p>
 <p><a href="map.html">The map</a></p>
 
+<script>
+if (new Date() - location.search.substr(1) > 1000) location.href = location.pathname + '?' + new Date() * 1
+</script>
 </body>
