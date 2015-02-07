@@ -18,16 +18,16 @@ a {
 
 
 <h2>Basic addition</h2>
-<input value="1" id="add1">
+<input value="1" id="addBox1">
 plus
-<input value="2" id="add2">
+<input value="2" id="addBox2">
 <input type="button" value="equals" id="addButton">
 <span id="addResult"></span>
 <script>
 document.getElementById('addButton').onclick = function(){
   // Get numbers from the two boxes.
-  var add1 = Number(document.getElementById('add1').value)
-  var add2 = Number(document.getElementById('add1').value)
+  var add1 = Number(document.getElementById('addBox1').value)
+  var add2 = Number(document.getElementById('addBox2').value)
   // Add the two numbers together and store them as result.
   var result = add1 + add2
   // Show the result.
@@ -37,16 +37,16 @@ document.getElementById('addButton').onclick = function(){
 
 
 <h2>Multiplication</h2>
-<input value="1" id="multiply1">
+<input value="1" id="multiplyBox1">
 times
-<input value="2" id="multiply2">
+<input value="2" id="multiplyBox2">
 <input type="button" value="equals" id="multiplyButton">
 <span id="multiplyResult"></span>
 <script>
 document.getElementById('multiplyButton').onclick = function(){
   // Get the two numbers from the boxes.
-  var multiply1 = Number(document.getElementById('multiply1').value)
-  var multiply2 = Number(document.getElementById('multiply2').value)
+  var multiply1 = Number(document.getElementById('multiplyBox1').value)
+  var multiply2 = Number(document.getElementById('multiplyBox2').value)
   // Multiply the two numbers together. Star (shift+8) means multiply.
   var result = multiply1 * multiply2
   document.getElementById('multiplyResult').textContent = result
@@ -56,16 +56,16 @@ document.getElementById('multiplyButton').onclick = function(){
 
 
 <h2>Division (Fill in this formula yourself)</h2>
-<input value="1" id="divide1">
+<input value="1" id="divideBox1">
 divide by
-<input value="2" id="divide2">
+<input value="2" id="divideBox2">
 <input type="button" value="equals" id="divideButton">
 <span id="divideResult"></span>
 <script>
 document.getElementById('divideButton').onclick = function(){
   // Get the two numbers from the boxes.
-  var divide1 = Number(document.getElementById('divide1').value)
-  var divide2 = Number(document.getElementById('divide2').value)
+  var divide1 = Number(document.getElementById('divideBox1').value)
+  var divide2 = Number(document.getElementById('divideBox2').value)
   // Divide the two numbers together. Slash / means divide.
   // Write the division code yourself.
   var result =
@@ -83,17 +83,17 @@ Go through and change add to subtract everywhere. Also, change the plus sign to 
 
 <h2>Parimeter of a Rectangle (Fill in the formula)</h2>
 Width:
-<input value="2" id="width">
+<input value="2" id="widthBox">
 Height:
-<input value="3" id="height">
+<input value="3" id="heightBox">
 <input type="button" value="calcuate parimeter" id="parimeterButton">
 <span id="parimeterResult"></span>
 <script>
 document.getElementById('parimeterButton').onclick = function(){
-  var width = Number(document.getElementById('width').value)
-  var height = Number(document.getElementById('height').value)
+  var width = Number(document.getElementById('widthBox').value)
+  var height = Number(document.getElementById('heightBox').value)
   // Fill in the formula for a parimeter here:
-  var result =
+  var result = (width + height) * 2
   document.getElementById('parimeterResult').textContent = result
 }
 </script>
@@ -128,7 +128,7 @@ Name:
 
 <script>
 document.getElementById('nameButton').onclick = function(){
-  var name = $('#nameBox').val()
+  var name = document.getElementById('nameBox').value
   $('#nameResponse').text('Hi, ' + name + '! That\'s a good name!')
 }
 </script>
