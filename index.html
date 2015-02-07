@@ -218,7 +218,7 @@ document.getElementById('randomButton').onclick = function(){
 <input type="button" id="randomButton2" value="Get a random number between 1 and 10"> <span id="randomResult2"></span>
 <script>
 document.getElementById('randomButton2').onclick = function(){
-  result = Math.random()
+  result = Math.random(5)
   result = result * 10
   result = Math.ceil(result)  // This rounds the number down
   document.getElementById('randomResult2').textContent = result
