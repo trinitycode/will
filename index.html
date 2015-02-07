@@ -158,8 +158,17 @@ document.getElementById('colorResponse').textContent = 'Here is some ' + color +
 document.getElementById('colorResponse').style.color = 'green'
 </script>
 
-<h2>What's your favorite color? (Can you make a box that asks what your favorite color is?)</h2>
-
+<h2>What's your favorite color? </h2>
+Color: 
+<input id="colorBox">
+<input type="button" value="enter" id="colorButton">
+<span id="colorResponse"></span>
+<script>
+document.getElementById('colorButton').onclick = function(){
+  name = document.getElementById('colorBox').value
+  document.getElementById('colorResponse').textContent = ' '
+}
+</script>
 
 
 <h2>Is your number bigger than 5? (Can you change this to smaller?)</h2>
