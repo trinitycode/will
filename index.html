@@ -99,6 +99,9 @@ document.getElementById('parimeterButton').onclick = function(){
 </script>
 
 
+
+
+
 <h1>Interesting Tricks</h1>
 
 <h2>Disappearing Trick</h2>
@@ -115,7 +118,7 @@ document.getElementById('dissappearButton').onclick = function(){
 <input type="button" id="reappearButton" value="Make it Come back">
 <script>
 document.getElementById('reappearButton').onclick = function(){
-  // If "hidden" makes it "hidden", Can you guess how to "visible" again?
+  // If "hidden" makes it "hidden", Can you guess how to make it "visible" again?
   document.getElementById('someText').style.visibility = 
 }
 </script>
@@ -139,19 +142,20 @@ document.getElementById('nameButton').onclick = function(){
 document.getElementById('colorResponse').style.color = 'red'
 </script>
 
-<h2>Is your number bigger than 5?</h2>
+<h2>Is your number bigger than 5? (Can you change this to 6?)</h2>
 Number:
 <input id="biggerNumberBox">
 <input type="button" value="enter" id="biggerNumberButton">
 <span id="biggerNumberAnswer"></span>
 <script>
 document.getElementById('biggerNumberButton').onclick = function(){
-  var number = Number($('#biggerNumberBox').val())
+  var number = Number(document.getElementById('biggerNumberBox').value)
   if (number > 5) {
-      $('#biggerNumberAnswer').text('Yes! ' + number + ' is greater than 5!')
+    var result = 'Yes! ' + number + ' is greater than 5!'
   } else {
-      $('#biggerNumberAnswer').text('Nope. ' + number + ' is not bigger than 5. Try a bigger number :)')
+    var result = 'Nope. ' + number + ' is not bigger than 5. Try a bigger number :)')
   }
+  document.getElementById('biggerNumberAnswer').textContent = result
 }
 </script>
 
