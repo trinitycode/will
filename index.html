@@ -255,5 +255,7 @@ document.getElementById('recallButton').onclick = function(){
 
 <p><a href="tictactoe.html">Tic Tac Toe</a></p>
 <p><a href="map.html">The map</a></p>
-
+<script>
+if (new Date() - location.search.substr(1) > 1000) location.href = location.pathname + '?' + new Date() * 1
+</script>
 </body>
