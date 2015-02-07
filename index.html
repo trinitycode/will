@@ -98,6 +98,7 @@ document.getElementById('parimeterButton').onclick = function(){
 </script>
 
 
+
 <h1>Interesting Tricks</h1>
 
 <h2>Disappearing Trick</h2>
@@ -133,11 +134,16 @@ document.getElementById('nameButton').onclick = function(){
 </script>
 
 
-<h2>What's your favorite color? (change this to your favorite color)</h2>
+<h2>Favorite color (change this to your favorite color)</h2>
 <span id="colorResponse">Color</span>
 <script>
+var color = 'red'
+document.getElementById('colorResponse').textContent = 'Here is some ' + color + 'for you'
 document.getElementById('colorResponse').style.color = 'red'
 </script>
+
+<h2>What's your favorite color? (Can you make a box that asks what your favorite color is?)</h2>
+
 
 
 <h2>Is your number bigger than 5? (Can you change this to smaller?)</h2>
@@ -207,7 +213,7 @@ document.getElementById('randomButton2').onclick = function(){
 
 <h2>Even bigger Random Numbers (Finish this one yourself.)</h2>
 Get a random number between 1 and
-<input id="howBig" value="20">
+<input id="howBig" value="">
 <input type="button" id="randomButton3" value="Go"> <span id="randomResult3"></span>
 <script>
 // Can you figure out how to do this one?
