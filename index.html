@@ -106,7 +106,7 @@ document.getElementById('parimeterButton').onclick = function(){
 <input type="button" id="dissappearButton" value="Make it Disappear">
 <script>
 document.getElementById('dissappearButton').onclick = function(){
-  $('#someText').hide()
+  document.getElementById('someText').visibility = 'hidden'
 }
 </script>
 
@@ -115,8 +115,8 @@ document.getElementById('dissappearButton').onclick = function(){
 <input type="button" id="reappearButton" value="Make it Come back">
 <script>
 document.getElementById('reappearButton').onclick = function(){
-  // If .hide() makes it hide, Can you guess how to "show" it again?
-  $('#someText')
+  // If "hidden" makes it "hidden", Can you guess how to "visible" again?
+  document.getElementById('someText').visibility = ''
 }
 </script>
 
