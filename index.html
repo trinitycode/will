@@ -173,12 +173,12 @@ document.getElementById('colorButton').onclick = function(){
 
 <h2>Is your number bigger than 5? (Can you change this to smaller?)</h2>
 Number:
-<input id="biggerNumberBox">
-<input type="button" value="enter" id="biggerNumberButton">
-<span id="biggerNumberAnswer"></span>
+<input id="smallerNumberBox">
+<input type="button" value="enter" id="smallerNumberButton">
+<span id="smallerNumberAnswer"></span>
 <script>
-document.getElementById('biggerNumberButton').onclick = function(){
-  number = Number(document.getElementById('biggerNumberBox').value)
+document.getElementById('smallerNumberButton').onclick = function(){
+  number = Number(document.getElementById('smallerNumberBox').value)
   if (number > 5) {
     result = 'Yes! ' + number + ' is greater than 5!'
   } else {
