@@ -19,7 +19,7 @@ a {
 
 
 <h2>Basic addition</h2>
-<input value="1" id="addBox1">
+add2<input value="1" id="addBox1">
 plus
 <input value="2" id="addBox2">
 <input type="button" value="equals" id="addButton">
@@ -30,7 +30,7 @@ document.getElementById('addButton').onclick = function(){
   add1 = Number(document.getElementById('addBox1').value)
   add2 = Number(document.getElementById('addBox2').value)
   // Add the two numbers together and store them as result.
-  result = add1 + add2
+  result = add1 + a
   // Show the result.
   document.getElementById('addResult').textContent = result
 }
@@ -78,8 +78,8 @@ document.getElementById('divideButton').onclick = function(){
 <h2>Subtraction (Make this one by copying the addition code)</h2>
 Select and Copy the addition code (ctrl+c) and paste it here (ctrl+v).
 Go through and change add to subtract everywhere. Also, change the plus sign to a minus sign.
-<input value="1" id="subtractBox1">
-plus
+subtract2<input value="1" id="subtractBox1">
+minus
 <input value="2" id="subtractBox2">
 <input type="button" value="equals" id="subtractButton">
 <span id="subtractResult"></span>
@@ -88,12 +88,8 @@ document.getElementById('subtractButton').onclick = function(){
   // Get numbers from the two boxes.
   subtract1 = Number(document.getElementById('subtractBox1').value)
   subtract2 = Number(document.getElementById('subtractBox2').value)
-  // Subtract the two numbers together and store them as result.
-  result = subtract1 - subtract2
-  // Show the result.
-  document.getElementById('subtractResult').textContent = result
-}
-</script>
+  // Add the two numbers together and store them as result.
+  result = subtract1 + subtract2
 
 
 <h2>Parimeter of a Rectangle (Fill in the formula)</h2>
