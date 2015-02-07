@@ -149,26 +149,17 @@ document.getElementById('nameButton').onclick = function(){
 }
 </script>
 
-
-<h2>Favorite color (change this to your favorite color)</h2>
-<span id="colorResponse">Color</span>
-<script>
-var color = 'green'
-document.getElementById('colorResponse').textContent =
-document.getElementById('colorResponse').style.color = 
-
 <h2>What's your favorite color? </h2>
 Color: 
 <input id="colorBox">
-<input type="button" value="enter" id="colorButton">
-<span id="friendship"></span>
+<input type="button" value="enter" id=colorButton">
+<span id="colorResponse"></span>
 <script>
 document.getElementById('colorButton').onclick = function(){
   name = document.getElementById('colorBox').value
-  document.getElementById('colorResponse').style.color = 'green'
+  document.getElementById('colorResponse').textContent = ' '
 }
 </script>
-
 
 <h2>Is your number smaller than 5? (Can you change this to smaller?)</h2>
 Number:
