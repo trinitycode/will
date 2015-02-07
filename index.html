@@ -208,7 +208,7 @@ document.getElementById('whichBiggerButton').onclick = function(){
 <input type="button" id="randomButton" value="Get a random number between 0 and 1"> <span id="randomResult"></span>
 <script>
 document.getElementById('randomButton').onclick = function(){
-  result = Math.random()
+  result = Math.random(0.25)
   document.getElementById('randomResult').textContent = result
 }
 </script>
