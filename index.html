@@ -138,14 +138,14 @@ document.getElementById('reappearButton').onclick = function(){
 
 
 <h2>What's your name? (Change this so it says: I like that name.)</h2>
-Name: Will
+Name: 
 <input id="nameBox">
 <input type="button" value="enter" id="nameButton">
 <span id="nameResponse"></span>
 <script>
 document.getElementById('nameButton').onclick = function(){
   name = document.getElementById('nameBox').value
-  document.getElementById('nameResponse').textContent = 'Hi, ' + name + '! That\'s a good name!'
+  document.getElementById('nameResponse').textContent = 'I like' + name + 'that name.'
 }
 </script>
 
