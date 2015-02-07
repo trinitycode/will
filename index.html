@@ -64,12 +64,12 @@ divide by
 <script>
 document.getElementById('divideButton').onclick = function(){
   // Get the two numbers from the boxes.
-  var divide1 = Number($('#divide1').val())
-  var divide2 = Number($('#divide2').val())
+  var divide1 = Number(document.getElementById('divide1').value)
+  var divide2 = Number(document.getElementById('divide2').value)
   // Divide the two numbers together. Slash / means divide.
   // Write the division code yourself.
   var result =
-  $('#divideResult').text(result)
+  document.getElementById('divideResult').textContent = result
 }
 </script>
 
@@ -90,11 +90,11 @@ Height:
 <span id="parimeterResult"></span>
 <script>
 document.getElementById('parimeterButton').onclick = function(){
-  var width = Number($('#width').val())
-  var height = Number($('#height').val())
+  var width = Number(document.getElementById('width').value)
+  var height = Number(document.getElementById('height').value)
   // Fill in the formula for a parimeter here:
   var result =
-  $('#parimeterResult').text(result)
+  document.getElementById('parimeterResult').textContent = result
 }
 </script>
 
